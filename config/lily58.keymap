@@ -35,6 +35,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COLON";
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        comma_semicolon: comma_semicolon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMICOLON";
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -43,11 +61,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3          &kp N4    &kp N5                         &kp N6   &kp N7    &kp N8    &kp N9     &kp N0  &kp GRAVE
-&kp TAB    &kp Q   &kp C   &kp O           &kp P     &kp W                          &kp J    &kp M     &kp D     &to 1      &kp Y   &kp MINUS
-&kp LCTRL  &kp A   &kp S   &kp E           &kp N     &kp F                          &kp L    &kp R     &kp T     &kp I      &kp U   &kp SQT
-&kp LSHFT  &kp Z   &kp X   &dash_question  &kp V     &kp B   &kp LBKT     &kp RBKT  &kp DOT  &kp H     &kp G     &kp COMMA  &kp K   &kp RSHFT
-                           &kp LALT        &kp LGUI  &mo 0   &kp SPACE    &kp RET   &mo 0    &kp BSPC  &kp RGUI
+&kp ESC    &kp N1  &kp N2  &kp N3          &kp N4    &kp N5                         &kp N6      &kp N7    &kp N8    &kp N9            &kp N0  &kp GRAVE
+&kp TAB    &kp Q   &kp C   &kp O           &kp P     &kp W                          &kp J       &kp M     &kp D     &to 1             &kp Y   &kp MINUS
+&kp LCTRL  &kp A   &kp S   &kp E           &kp N     &kp F                          &kp L       &kp R     &kp T     &kp I             &kp U   &kp SQT
+&kp LSHFT  &kp Z   &kp X   &dash_question  &kp V     &kp B   &kp LBKT     &kp RBKT  &dot_colon  &kp H     &kp G     &comma_semicolon  &kp K   &kp RSHFT
+                           &kp LALT        &kp LGUI  &mo 0   &kp SPACE    &kp RET   &mo 0       &kp BSPC  &kp RGUI
             >;
         };
 
