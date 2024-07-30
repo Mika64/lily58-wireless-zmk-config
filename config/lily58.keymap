@@ -4,15 +4,15 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <zmk-helpers/helper.h>
+#include "zmk-helpers/helper.h"
 
 // Source desired key-position labels
 
-#include <zmk-helpers/key-labels/lily58.h>
+#include "zmk-helpers/key-labels/lily58.h"
 
 // Source unicode-chars for desired languages
 
-#include <zmk-helpers/unicode-chars/french.dtsi>
+#include "zmk-helpers/unicode-chars/french.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
