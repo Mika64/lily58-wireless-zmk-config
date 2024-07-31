@@ -3,6 +3,8 @@
  *
  * SPDX-License-Identifier: MIT
  */
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 
 #include "zmk-helpers/helper.h"
 
@@ -44,6 +46,7 @@
 //    };
 #define DEF 0
 #define ACC 1
+
 
 ZMK_LAYER(base,
 // ╭───────────────┬───────┬───────┬───────────────┬─────────┬───────╮                     ╭────────────┬─────────┬─────────┬─────────────────┬───────┬────────────────╮
