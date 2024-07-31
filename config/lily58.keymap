@@ -47,6 +47,8 @@
 #define DEF 0
 #define ACC 1
 
+ZMK_UNICODE_PAIR(fr_a_grave,        N0, N0, E, N0,   N0, N0, C, N0)
+
 ZMK_MOD_MORPH(dash_question,
     bindings = <&kp MINUS>, <&kp QUESTION>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
