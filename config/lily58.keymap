@@ -16,34 +16,6 @@
 #include "zmk-helpers/unicode-chars/french.dtsi"
 #include "zmk-helpers/unicode-chars/greek.dtsi"
 
-//    behaviors {
-//        dash_question: dash_question {
-//            compatible = "zmk,behavior-mod-morph";
-//            label = "DASH_QUESTION";
-//            bindings = <&kp MINUS>, <&kp QUESTION>;
-//
-//            #binding-cells = <0>;
-//            mods = <(MOD_LSFT|MOD_RSFT)>;
-//        };
-//
-//        dot_colon: dot_colon {
-//            compatible = "zmk,behavior-mod-morph";
-//            label = "DOT_COLON";
-//            bindings = <&kp DOT>, <&kp COLON>;
-//
-//            #binding-cells = <0>;
-//            mods = <(MOD_LSFT|MOD_RSFT)>;
-//        };
-//
-//        comma_semicolon: comma_semicolon {
-//            compatible = "zmk,behavior-mod-morph";
-//            label = "COMMA_SEMICOLON";
-//            bindings = <&kp COMMA>, <&kp SEMICOLON>;
-//
-//            #binding-cells = <0>;
-//            mods = <(MOD_LSFT|MOD_RSFT)>;
-//        };
-//    };
 #define DEF 0
 #define ACC 1
 
@@ -78,7 +50,7 @@ ZMK_LAYER(base,
 
 ZMK_LAYER(acc,
 // ╭───────┬─────────────────┬──────────────┬────────────┬─────────────────┬───────╮                    ╭────────────┬─────────┬─────────┬───────┬────────────────┬────────╮
-    &trans  &trans            &trans         &trans       &trans            &trans                       &trans       &trans    &trans    &trans  &trans  &trans
+    &to 0   &trans            &trans         &trans       &trans            &trans                       &trans       &trans    &trans    &trans  &trans  &trans
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
     &trans  &fr_a_circumflex  &fr_c_cedilla  &fr_oe       &fr_o_circumflex  &trans                       &trans       &el_mu    &trans    &trans  &fr_u_circumflex &trans
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
