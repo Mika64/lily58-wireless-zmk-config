@@ -5,7 +5,7 @@
  */
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
+#define HOST_OS 1
 #include "zmk-helpers/helper.h"
 
 // Source desired key-position labels
@@ -13,7 +13,6 @@
 #include "zmk-helpers/key-labels/lily58.h"
 
 // Source unicode-chars for desired languages
-
 #include "zmk-helpers/unicode-chars/french.dtsi"
 
 //    behaviors {
@@ -77,15 +76,15 @@ ZMK_LAYER(base,
 )
 
 ZMK_LAYER(acc,
-// ╭──────────────┬────────────┬───────┬───────────────┬─────────┬───────╮                     ╭────────────┬─────────┬─────────┬─────────────────┬───────┬────────────────╮
-    &trans         &trans       &trans  &trans          &trans    &trans                        &trans       &trans    &trans    &trans            &trans  &trans
-// ├──────────────┼────────────┼───────┼───────────────┼─────────┼───────┤                     ├────────────┼─────────┼─────────┼─────────────────┼───────┼────────────────┤
-    &trans         &trans       &trans  &trans          &trans    &trans                        &trans       &trans    &trans    &trans            &trans  &trans
-// ├──────────────┼────────────┼───────┼───────────────┼─────────┼───────┤                     ├────────────┼─────────┼─────────┼─────────────────┼───────┼────────────────┤
-    &trans         &fr_a_grave  &trans  &trans          &trans    &trans                        &trans       &trans    &trans    &trans            &trans  &trans
-// ├──────────────┼────────────┼───────┼───────────────┼─────────┼───────┼──────────┬──────────┼────────────┼─────────┼─────────┼─────────────────┼───────┼────────────────┤
-    &trans         &trans       &trans  &trans          &trans    &trans  &trans     &trans     &trans       &trans    &trans    &trans            &trans  &trans
-// ╰──────────────┴────────────┴───────┼───────────────┼─────────┼───────┼──────────┼──────────┼────────────┼─────────┼─────────┼─────────────────┴───────┴────────────────╯
-                                        &trans          &trans    &trans  &trans     &trans     &trans       &trans    &trans
-//                                     ╰───────────────┴─────────┴────────┴─────────┴──────────┴────────────┴─────────┴─────────╯
+// ╭───────┬─────────────────┬──────────────┬────────────┬─────────────────┬───────╮                    ╭────────────┬─────────┬─────────┬───────┬────────────────┬────────╮
+    &trans  &trans            &trans         &trans       &trans            &trans                       &trans       &trans    &trans    &trans  &trans  &trans
+// ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
+    &trans  &fr_a_circumflex  &fr_c_cedilla  &fr_oe       &fr_o_circumflex  &trans                       &trans       &el_mu    &trans    &trans  &fr_u_circumflex &trans
+// ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
+    &trans  &fr_a_grave       &fr_e_acute    &fr_e_grave  &fr_e_circumflex  &trans                       &trans       &trans    &trans    &trans  &fr_u_grave      &trans
+// ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┼─────────┬──────────┼────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
+    &trans  &fr_ae            &trans         &trans       &trans            &trans  &trans    &trans     &trans       &trans    &trans    &trans  &trans           &trans
+// ╰───────┴─────────────────┴──────────────┼────────────┼─────────────────┼───────┼─────────┼──────────┼────────────┼─────────┼─────────┼───────┴────────────────┴────────╯
+                                             &trans       &trans            &trans  &trans    &trans     &trans       &trans    &trans
+//                                          ╰────────────┴─────────────────┴───────┴─────────┴──────────┴────────────┴─────────┴─────────╯
 )
