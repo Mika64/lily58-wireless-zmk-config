@@ -13,54 +13,39 @@
 // Source unicode-chars for desired languages
 
 #include "zmk-helpers/unicode-chars/french.dtsi"
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 
-/ {
-    combos {
-        compatible = "zmk,combos";
+//    behaviors {
+//        dash_question: dash_question {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "DASH_QUESTION";
+//            bindings = <&kp MINUS>, <&kp QUESTION>;
+//
+//            #binding-cells = <0>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
+//
+//        dot_colon: dot_colon {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "DOT_COLON";
+//            bindings = <&kp DOT>, <&kp COLON>;
+//
+//            #binding-cells = <0>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
+//
+//        comma_semicolon: comma_semicolon {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "COMMA_SEMICOLON";
+//            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+//
+//            #binding-cells = <0>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
+//    };
+#define DEF 0
+#define ACC 1
 
-        test {
-            bindings = <&kp QUESTION>;
-            key-positions = <39 24>;
-        };
-    };
-
-    behaviors {
-        dash_question: dash_question {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DASH_QUESTION";
-            bindings = <&kp MINUS>, <&kp QUESTION>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dot_colon: dot_colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COLON";
-            bindings = <&kp DOT>, <&kp COLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        comma_semicolon: comma_semicolon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_SEMICOLON";
-            bindings = <&kp COMMA>, <&kp SEMICOLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    };
-
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            display-name = "Base";
-            bindings = <
+ZMK_LAYER(base,
 // ╭───────────────┬───────┬───────┬───────────────┬─────────┬───────╮                     ╭────────────┬─────────┬─────────┬─────────────────┬───────┬────────────────╮
     &kp ESC         &kp N1  &kp N2  &kp N3          &kp N4    &kp N5                        &kp N6       &kp N7    &kp N8    &kp N9            &kp N0  &kp GRAVE
 // ├───────────────┼───────┼───────┼───────────────┼─────────┼───────┤                     ├────────────┼─────────┼─────────┼─────────────────┼───────┼────────────────┤
@@ -72,11 +57,9 @@
 // ╰───────────────┴───────┴───────┼───────────────┼─────────┼───────┼──────────┼──────────┼────────────┼─────────┼─────────┼─────────────────┴───────┴────────────────╯
                                     &kp LALT        &kp LGUI  &mo 0   &kp SPACE   &kp RET   &mo 0        &kp BSPC  &kp RGUI
 //                                 ╰───────────────┴─────────┴───────┴──────────┴──────────┴────────────┴─────────┴─────────╯
-            >;
-        };
+)
 
-        layer_1 {
-            bindings = <
+ZMK_LAYER(acc,
 // ╭──────────────┬─────────┬───────┬───────────────┬─────────┬───────╮                     ╭────────────┬─────────┬─────────┬─────────────────┬───────┬────────────────╮
     &trans         &trans    &trans  &trans          &trans    &trans                        &trans       &trans    &trans    &trans            &trans  &trans
 // ├──────────────┼─────────┼───────┼───────────────┼─────────┼───────┤                     ├────────────┼─────────┼─────────┼─────────────────┼───────┼────────────────┤
@@ -88,7 +71,4 @@
 // ╰──────────────┴─────────┴───────┼───────────────┼─────────┼───────┼──────────┼──────────┼────────────┼─────────┼─────────┼─────────────────┴───────┴────────────────╯
                                      &trans          &trans    &trans  &trans     &trans     &trans       &trans    &trans
 //                                 ╰───────────────┴─────────┴────────┴──────────┴──────────┴────────────┴─────────┴─────────╯
-            >;
-        };
-    };
-};
+)
