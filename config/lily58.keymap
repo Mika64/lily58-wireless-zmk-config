@@ -14,6 +14,7 @@
 
 // Source unicode-chars for desired languages
 #include "zmk-helpers/unicode-chars/french.dtsi"
+#include "zmk-helpers/unicode-chars/greek.dtsi"
 
 //    behaviors {
 //        dash_question: dash_question {
