@@ -33,7 +33,9 @@ ZMK_MOD_MORPH(comma_semicolon,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-ZMK_MACRO(test, bindings = <fr_a_grave>, <&to DEF>;)
+ZMK_MACRO(test, 
+    bindings = <&fr_a_grave>, <&to DEF>;
+)
 
 ZMK_LAYER(base,
 // ╭───────────────┬───────┬───────┬───────────────┬─────────┬───────╮                     ╭────────────┬─────────┬─────────┬─────────────────┬───────┬────────────────╮
