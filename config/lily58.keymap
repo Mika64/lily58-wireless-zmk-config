@@ -33,6 +33,7 @@ ZMK_MOD_MORPH(comma_semicolon,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+ZMK_MACRO(test, bindings = <fr_a_grave>, <&to DEF>;)
 
 ZMK_LAYER(base,
 // ╭───────────────┬───────┬───────┬───────────────┬─────────┬───────╮                     ╭────────────┬─────────┬─────────┬─────────────────┬───────┬────────────────╮
@@ -50,7 +51,7 @@ ZMK_LAYER(base,
 
 ZMK_LAYER(acc,
 // ╭───────┬─────────────────┬──────────────┬────────────┬─────────────────┬───────╮                    ╭────────────┬─────────┬─────────┬───────┬────────────────┬────────╮
-    &to 0   &trans            &trans         &trans       &trans            &trans                       &trans       &trans    &trans    &trans  &trans  &trans
+    &to 0   &test             &trans         &trans       &trans            &trans                       &trans       &trans    &trans    &trans  &trans  &trans
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
     &trans  &fr_a_circumflex  &fr_c_cedilla  &fr_oe       &fr_o_circumflex  &trans                       &trans       &el_mu    &trans    &trans  &fr_u_circumflex &trans
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
