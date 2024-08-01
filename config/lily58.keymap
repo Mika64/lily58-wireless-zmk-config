@@ -35,7 +35,14 @@ ZMK_MOD_MORPH(comma_semicolon,
     bindings = <&kp COMMA>, <&kp SEMICOLON>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
+ZMK_MOD_MORPH(test2,
+    bindings = <&test>, <&test_kp>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 
+ZMK_MACRO(test_kp, 
+    bindings = <&kp CAPSLOCK>, <&kp FR_EACU>, <&to DEF>;
+)
 ZMK_MACRO(test, 
     bindings = <&kp FR_EACU>, <&to DEF>;
 )
