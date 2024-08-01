@@ -5,7 +5,8 @@
  */
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#define HOST_OS 2
+#define HOST_OS 1
+#include "keymap_french.h"
 #include "zmk-helpers/helper.h"
 
 // Source desired key-position labels
@@ -16,8 +17,6 @@
 #include "zmk-helpers/unicode-chars/french.dtsi"
 #include "zmk-helpers/unicode-chars/greek.dtsi"
 
-#define GR_MU   KC_M    // Μ
-#define FR_EACU KC_2    // é
 
 
 #define DEF 0
