@@ -16,6 +16,10 @@
 #include "zmk-helpers/unicode-chars/french.dtsi"
 #include "zmk-helpers/unicode-chars/greek.dtsi"
 
+#define GR_MU   KC_M    // Μ
+#define FR_EACU KC_2    // é
+
+
 #define DEF 0
 #define ACC 1
 
@@ -34,7 +38,7 @@ ZMK_MOD_MORPH(comma_semicolon,
 )
 
 ZMK_MACRO(test, 
-    bindings = <&fr_a_grave>, <&to DEF>;
+    bindings = <&kp FR_EACU>, <&to DEF>;
 )
 
 ZMK_LAYER(base,
@@ -55,7 +59,7 @@ ZMK_LAYER(acc,
 // ╭───────┬─────────────────┬──────────────┬────────────┬─────────────────┬───────╮                    ╭────────────┬─────────┬─────────┬───────┬────────────────┬────────╮
     &to 0   &test             &trans         &trans       &trans            &trans                       &trans       &trans    &trans    &trans  &trans  &trans
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
-    &trans  &fr_a_circumflex  &fr_c_cedilla  &fr_oe       &fr_o_circumflex  &trans                       &trans       &el_mu    &trans    &trans  &fr_u_circumflex &trans
+    &trans  &fr_a_circumflex  &fr_c_cedilla  &fr_oe       &fr_o_circumflex  &trans                       &trans       &kp GR_MU &trans    &trans  &fr_u_circumflex &trans
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
     &trans  &fr_a_grave       &fr_e_acute    &fr_e_grave  &fr_e_circumflex  &trans                       &trans       &trans    &trans    &trans  &fr_u_grave      &trans
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┼─────────┬──────────┼────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
