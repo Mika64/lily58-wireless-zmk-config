@@ -23,33 +23,8 @@
 #define ACC 1
 
 
-ZMK_MOD_MORPH(dash_question,
-    bindings = <&kp MINUS>, <&kp QUESTION>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-ZMK_MOD_MORPH(dot_colon,
-    bindings = <&kp DOT>, <&kp COLON>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-ZMK_MOD_MORPH(comma_semicolon,
-    bindings = <&kp FR_COMM>, <&kp M>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-ZMK_MOD_MORPH(FR_E_ACU,
-    bindings = <&FR_E_ACU_LOW>, <&FR_E_ACU_UP>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-ZMK_MACRO(FR_E_ACU_UP, 
-    bindings = <&kp CAPSLOCK>, <&kp FR_EACU>, <&kp CAPSLOCK>, <&to DEF>;
-)
-
-ZMK_MACRO(FR_E_ACU_LOW, 
-    bindings = <&kp FR_EACU>, <&to DEF>;
-)
+#include "french-morph.h"
+#include "french-macro.h"
 
 ZMK_LAYER(base,
 // ╭───────────────┬────────┬───────┬───────────────┬─────────┬────────╮                      ╭────────────┬─────────┬─────────┬─────────────────┬───────┬────────────────╮
@@ -66,15 +41,15 @@ ZMK_LAYER(base,
 )
 
 ZMK_LAYER(acc,
-// ╭───────┬─────────────────┬──────────────┬────────────┬─────────────────┬───────╮                    ╭────────────┬─────────┬─────────┬───────┬────────────────┬────────╮
-    &to 0   &trans            &trans         &trans       &trans            &trans                       &trans       &trans    &trans    &trans  &trans  &trans
-// ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
-    &trans  &fr_a_circumflex  &fr_c_cedilla  &fr_oe       &fr_o_circumflex  &trans                       &trans       &kp U     &trans    &trans  &fr_u_circumflex &trans
-// ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
-    &trans  &fr_a_grave       &FR_E_ACU      &fr_e_grave  &fr_e_circumflex  &trans                       &trans       &trans    &trans    &trans  &fr_u_grave      &trans
-// ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┼─────────┬──────────┼────────────┼─────────┼─────────┼───────┼────────────────┼────────┤
-    &trans  &fr_ae            &trans         &trans       &trans            &trans  &trans    &trans     &trans       &trans    &trans    &trans  &trans           &trans
-// ╰───────┴─────────────────┴──────────────┼────────────┼─────────────────┼───────┼─────────┼──────────┼────────────┼─────────┼─────────┼───────┴────────────────┴────────╯
+// ╭───────┬─────────────────┬──────────────┬────────────┬─────────────────┬───────╮                    ╭────────────┬─────────┬─────────┬─────────┬────────────────┬────────╮
+    &to 0   &trans            &trans         &trans       &trans            &trans                       &trans       &trans    &trans    &trans    &trans           &trans
+// ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼─────────┼────────────────┼────────┤
+    &trans  &FR_A_CIR         &fr_c_cedilla  &fr_oe       &fr_o_circumflex  &trans                       &trans       &kp U     &trans    &FR_TREM  &fr_u_circumflex &trans
+// ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼─────────┼─────────┼─────────┼────────────────┼────────┤
+    &trans  &FR_A_GRV         &FR_E_ACU      &FR_E_GRV    &FR_E_CIR         &trans                       &trans       &trans    &trans    &trans    &fr_u_grave      &trans
+// ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┼─────────┬──────────┼────────────┼─────────┼─────────┼─────────┼────────────────┼────────┤
+    &trans  &fr_ae            &trans         &trans       &trans            &trans  &trans    &trans     &trans       &trans    &trans    &trans    &trans           &trans
+// ╰───────┴─────────────────┴──────────────┼────────────┼─────────────────┼───────┼─────────┼──────────┼────────────┼─────────┼─────────┼─────────┴────────────────┴────────╯
                                              &trans       &trans            &trans  &trans    &trans     &trans       &trans    &trans
 //                                          ╰────────────┴─────────────────┴───────┴─────────┴──────────┴────────────┴─────────┴─────────╯
 )
