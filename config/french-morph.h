@@ -51,7 +51,7 @@ ZMK_MOD_MORPH(FR_O_CIR,
 )
 
 ZMK_MOD_MORPH(FR_C_CED,
-    bindings = <&FR_C_CED_LOW>, <&FR_C_CIR_UP>;
+    bindings = <&FR_C_CED_LOW>, <&FR_C_CED_UP>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
