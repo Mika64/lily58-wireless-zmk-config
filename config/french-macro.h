@@ -92,3 +92,13 @@ ZMK_MACRO(FR_TREM,
     bindings = <&kp FR_DIAE>, <&to DEF>;
 )
 
+// ç
+ZMK_MACRO(FR_C_CED_LOW, 
+    bindings = <&kp FR_CCED>, <&kp FR_O>, <&to DEF>;
+)
+
+// Ç
+ZMK_MACRO(FR_C_CED_UP, 
+    bindings = <&kp FR_CCED>, <&kp CAPSLOCK>,<&kp FR_O>, <&kp CAPSLOCK>, <&to DEF>;
+)
+
