@@ -64,7 +64,7 @@ ZMK_MACRO(FR_U_CIR_LOW,
 
 // Û
 ZMK_MACRO(FR_U_CIR_UP, 
-    bindings = <&kp FR_CIRC>, <&kp CAPSLOCK>,<&kp FR_U>, <&kp CAPSLOCK>, <&to DEF>;
+    bindings = <&kp FR_CIRC>, <&kp CAPSLOCK>, <&kp FR_U>, <&kp CAPSLOCK>, <&to DEF>;
 )
 
 // î
@@ -74,7 +74,7 @@ ZMK_MACRO(FR_I_CIR_LOW,
 
 // Î
 ZMK_MACRO(FR_I_CIR_UP, 
-    bindings = <&kp FR_CIRC>, <&kp CAPSLOCK>,<&kp FR_I>, <&kp CAPSLOCK>, <&to DEF>;
+    bindings = <&kp FR_CIRC>, <&kp CAPSLOCK>, <&kp FR_I>, <&kp CAPSLOCK>, <&to DEF>;
 )
 
 // ô
