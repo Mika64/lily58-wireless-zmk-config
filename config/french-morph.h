@@ -67,11 +67,11 @@ ZMK_MOD_MORPH(FR_N1,
 )
 
 ZMK_MOD_MORPH(FR_N2,
-    bindings = <&kp FR_2>, <&kp RA(FR_E)>;
+    bindings = <&kp FR_2>, <&kp RA(FR_W)>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 ZMK_MOD_MORPH(FR_N3,
-    bindings = <&kp FR_3>, <&kp RA(FR_E)>;
+    bindings = <&kp FR_3>, <&kp RA(FR_X)>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 ZMK_MOD_MORPH(FR_N4,
