@@ -62,7 +62,7 @@ ZMK_MOD_MORPH(dead_key,
 )
 
 ZMK_MOD_MORPH(FR_N1,
-    bindings = <&kp FR_1>, <&kp RA(FR_E)>;
+    bindings = <&kp KP_N1>, <&kp RA(FR_E)>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
