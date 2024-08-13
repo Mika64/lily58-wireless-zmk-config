@@ -94,11 +94,11 @@ ZMK_MACRO(FR_TREM,
 
 // ç
 ZMK_MACRO(FR_C_CED_LOW, 
-    bindings = <&kp FR_CCED>, <&kp FR_O>, <&to ERGOL_FR>;
+    bindings = <&kp FR_CCED>, <&to ERGOL_FR>;
 )
 
 // Ç
 ZMK_MACRO(FR_C_CED_UP, 
-    bindings = <&kp FR_CCED>, <&kp CAPSLOCK>, <&kp FR_O>, <&kp CAPSLOCK>, <&to ERGOL_FR>;
+    bindings = <&kp CAPSLOCK>, <&kp FR_CCED>, <&kp CAPSLOCK>, <&to ERGOL_FR>;
 )
 
