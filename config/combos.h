@@ -1,1 +1,1 @@
-ZMK_COMBO(esc, &mo 6, LH1 RH1)
+ZMK_COMBO(layer, &to 6, LH1 RH1)
