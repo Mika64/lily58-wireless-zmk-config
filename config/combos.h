@@ -1,1 +1,1 @@
-ZMK_COMBO(layer, &to 6, LH1 RH1, ALL, 10000)
+ZMK_COMBO(layer, &mo 6, LH1 RH1, ALL, 10000)
