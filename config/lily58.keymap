@@ -43,35 +43,35 @@ ZMK_LAYER(ergol_fr,
 // ├───────────────┼──────────┼──────────┼───────────────┼──────────┼────────┼──────────┬───────────┼────────────┼─────────┼─────────┼─────────────────┼─────────┼────────────────┤
     &kp LCTRL       &kp FR_Z   &kp X      &dash_question  &kp V      &kp B    &kp LBKT    &kp RBKT   &dot_colon   &kp H     &kp G     &comma_semicolon  &kp K     &kp RCTRL
 // ╰───────────────┴──────────┴──────────┼───────────────┼──────────┼────────┼──────────┼───────────┼────────────┼─────────┼─────────┼─────────────────┴─────────┴────────────────╯
-                                          &kp LALT        &kp LGUI   &mo 2    &kp SPACE   &kp RET    &mo 2        &trans    &trans
+                                          &kp LALT        &kp LGUI   &mo 2    &kp SPACE   &kp RET    &mo 2        &none    &none
 //                                       ╰───────────────┴──────────┴────────┴──────────┴───────────┴────────────┴─────────┴─────────╯
 )
 
 ZMK_LAYER(ergol_fr_acc,
 // ╭───────┬─────────────────┬──────────────┬────────────┬─────────────────┬───────╮                    ╭────────────┬───────────┬─────────┬─────────┬────────────────┬────────╮
-    &to 0   &trans            &trans         &trans       &trans            &trans                       &trans       &trans      &trans    &trans    &trans           &kp PG_UP
+    &to 0   &none            &none         &none       &none            &none                       &none       &none      &none    &none    &none           &kp PG_UP
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &trans  &FR_A_CIR         &FR_C_CED      &trans       &FR_O_CIR         &trans                       &trans       &kp FR_MICR &trans    &FR_TREM  &FR_U_CIR        &kp PG_DN
+    &none  &FR_A_CIR         &FR_C_CED      &none       &FR_O_CIR         &none                       &none       &kp FR_MICR &none    &FR_TREM  &FR_U_CIR        &kp PG_DN
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┤                    ├────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &trans  &FR_A_GRV         &FR_E_ACU      &FR_E_GRV    &FR_E_CIR         &trans                       &trans       &trans      &trans    &trans    &FR_U_GRV        &trans
+    &none  &FR_A_GRV         &FR_E_ACU      &FR_E_GRV    &FR_E_CIR         &none                       &none       &none      &none    &none    &FR_U_GRV        &none
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼───────┼─────────┬──────────┼────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &trans  &trans            &trans         &trans       &trans            &trans  &trans    &trans     &trans       &trans      &trans    &trans    &trans           &trans
+    &none  &none            &none         &none       &none            &none  &none    &none     &none       &none      &none    &none    &none           &none
 // ╰───────┴─────────────────┴──────────────┼────────────┼─────────────────┼───────┼─────────┼──────────┼────────────┼───────────┼─────────┼─────────┴────────────────┴────────╯
-                                             &trans       &trans            &trans  &trans    &trans     &trans       &trans      &trans
+                                             &none       &none            &none  &none    &none     &none       &none      &none
 //                                          ╰────────────┴─────────────────┴───────┴─────────┴──────────┴────────────┴───────────┴─────────╯
 )
 
 ZMK_LAYER(ergol_fr_alt,
 // ╭───────┬─────────────────┬──────────────┬────────────┬─────────────────┬─────────────╮                    ╭────────────┬─────────────────┬──────────────────┬───────────┬────────────────┬────────╮
-    &to 0   &trans            &trans         &trans       &trans            &trans                             &trans       &trans            &trans             &trans      &trans           &trans
+    &to 0   &none            &none         &none       &none            &none                             &none       &none            &none             &none      &none           &none
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼─────────────┤                    ├────────────┼─────────────────┼──────────────────┼───────────┼────────────────┼────────┤
-    &trans  &kp FR_CIRC       &kp LT         &kp GT       &kp FR_DLR        &kp FR_PERC                        &kp FR_AT    &kp AMPS          &kp KP_ASTERISK    &kp FR_QUOT &kp FR_GRV       &trans
+    &none  &kp FR_CIRC       &kp LT         &kp GT       &kp FR_DLR        &kp FR_PERC                        &kp FR_AT    &kp AMPS          &kp KP_ASTERISK    &kp FR_QUOT &kp FR_GRV       &none
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼─────────────┤                    ├────────────┼─────────────────┼──────────────────┼───────────┼────────────────┼────────┤
-    &trans  &kp FR_LCBR       &kp FR_LPRN    &kp FR_RPRN  &kp FR_RCBR       &kp FR_EQL                         &kp FR_BSLS  &kp FR_PLUS       &kp FR_MINS        &kp FR_SLSH &kp FR_DQUO      &trans
+    &none  &kp FR_LCBR       &kp FR_LPRN    &kp FR_RPRN  &kp FR_RCBR       &kp FR_EQL                         &kp FR_BSLS  &kp FR_PLUS       &kp FR_MINS        &kp FR_SLSH &kp FR_DQUO      &none
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼─────────────┼─────────┬──────────┼────────────┼─────────────────┼──────────────────┼───────────┼────────────────┼────────┤
-    &trans  &kp TILDE2        &kp FR_LBRC    &kp FR_RBRC  &kp FR_UNDS       &kp FR_HASH   &trans    &trans     &kp FR_PIPE  &kp FR_EXLM       &kp FR_SCLN        &kp FR_COLN &kp FR_QUES      &trans
+    &none  &kp TILDE2        &kp FR_LBRC    &kp FR_RBRC  &kp FR_UNDS       &kp FR_HASH   &none    &none     &kp FR_PIPE  &kp FR_EXLM       &kp FR_SCLN        &kp FR_COLN &kp FR_QUES      &none
 // ╰───────┴─────────────────┴──────────────┼────────────┼─────────────────┼─────────────┼─────────┼──────────┼────────────┼─────────────────┼──────────────────┼───────────┴────────────────┴────────╯
-                                             &trans       &trans            &trans        &kp DEL   &kp BSPC   &trans       &trans            &trans
+                                             &none       &none            &none        &kp DEL   &kp BSPC   &none       &none            &none
 //                                          ╰────────────┴─────────────────┴─────────────┴─────────┴──────────┴────────────┴─────────────────┴──────────────────╯
 )
 
@@ -79,41 +79,41 @@ ZMK_LAYER(ergol_us,
 // ╭───────────────┬──────────┬──────────┬───────────────┬──────────┬────────╮                      ╭────────────┬─────────┬─────────┬─────────────────┬─────────┬────────────────╮
     &kp ESC         &kp N1     &kp N2     &kp N3          &kp N4     &kp N5                          &kp N6       &kp N7    &kp N8    &kp N9            &kp N0    &kp GRAVE
 // ├───────────────┼──────────┼──────────┼───────────────┼──────────┼────────┤                      ├────────────┼─────────┼─────────┼─────────────────┼─────────┼────────────────┤
-    &kp TAB         &kp Q      &kp C      &kp O           &kp P      &kp W                           &kp J        &kp M     &kp D     &trans            &kp Y     &kp MINUS
+    &kp TAB         &kp Q      &kp C      &kp O           &kp P      &kp W                           &kp J        &kp M     &kp D     &none            &kp Y     &kp MINUS
 // ├───────────────┼──────────┼──────────┼───────────────┼──────────┼────────┤                      ├────────────┼─────────┼─────────┼─────────────────┼─────────┼────────────────┤
     &kp LEFT_SHIFT  &kp A      &kp S      &kp E           &kp N      &kp F                           &kp L        &kp R     &kp T     &kp I             &kp U     &kp RIGHT_SHIFT
 // ├───────────────┼──────────┼──────────┼───────────────┼──────────┼────────┼──────────┬───────────┼────────────┼─────────┼─────────┼─────────────────┼─────────┼────────────────┤
     &kp LCTRL       &kp Z      &kp X      &dash_question  &kp V      &kp B    &kp LBKT    &kp RBKT   &dot_colon   &kp H     &kp G     &comma_semicolon  &kp K     &kp RCTRL
 // ╰───────────────┴──────────┴──────────┼───────────────┼──────────┼────────┼──────────┼───────────┼────────────┼─────────┼─────────┼─────────────────┴─────────┴────────────────╯
-                                          &kp LALT        &kp LGUI   &mo 4    &kp SPACE   &kp RET    &mo 4        &kp BSPC  &trans
+                                          &kp LALT        &kp LGUI   &mo 4    &kp SPACE   &kp RET    &mo 4        &kp BSPC  &none
 //                                       ╰───────────────┴──────────┴────────┴──────────┴───────────┴────────────┴─────────┴─────────╯
 )
 
 ZMK_LAYER(ergol_us_alt,
 // ╭───────┬─────────────────┬──────────────┬────────────┬─────────────────┬─────────────╮                    ╭────────────┬─────────────────┬──────────────────┬───────────┬────────────────┬────────╮
-    &to 3   &trans            &trans         &trans       &trans            &trans                             &trans       &trans            &trans             &trans      &trans           &trans
+    &to 3   &none            &none         &none       &none            &none                             &none       &none            &none             &none      &none           &none
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼─────────────┤                    ├────────────┼─────────────────┼──────────────────┼───────────┼────────────────┼────────┤
-    &trans  &kp CARET         &kp LT         &kp GT       &kp DLLR          &kp PRCNT                          &kp AT       &kp AMPS          &kp STAR           &kp APOS    &kp GRAVE        &trans
+    &none  &kp CARET         &kp LT         &kp GT       &kp DLLR          &kp PRCNT                          &kp AT       &kp AMPS          &kp STAR           &kp APOS    &kp GRAVE        &none
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼─────────────┤                    ├────────────┼─────────────────┼──────────────────┼───────────┼────────────────┼────────┤
-    &trans  &kp LBRC          &kp LPAR       &kp RPAR     &kp RBRC        &kp KP_EQUAL                         &kp BSLH     &kp KP_PLUS       &kp KP_MINUS       &kp KP_SLASH  &kp DQT        &trans
+    &none  &kp LBRC          &kp LPAR       &kp RPAR     &kp RBRC        &kp KP_EQUAL                         &kp BSLH     &kp KP_PLUS       &kp KP_MINUS       &kp KP_SLASH  &kp DQT        &none
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼─────────────┼─────────┬──────────┼────────────┼─────────────────┼──────────────────┼───────────┼────────────────┼────────┤
-    &trans  &kp TILDE2        &kp LBKT       &kp RBKT     &kp UNDER         &kp HASH      &trans    &trans     &kp PIPE     &kp EXCL          &kp SEMI           &kp COLON   &kp QMARK        &trans
+    &none  &kp TILDE2        &kp LBKT       &kp RBKT     &kp UNDER         &kp HASH      &none    &none     &kp PIPE     &kp EXCL          &kp SEMI           &kp COLON   &kp QMARK        &none
 // ╰───────┴─────────────────┴──────────────┼────────────┼─────────────────┼─────────────┼─────────┼──────────┼────────────┼─────────────────┼──────────────────┼───────────┴────────────────┴────────╯
-                                             &trans       &trans            &trans        &trans    &trans     &trans       &trans            &trans
+                                             &none       &none            &none        &none    &none     &none       &none            &none
 //                                          ╰────────────┴─────────────────┴─────────────┴─────────┴──────────┴────────────┴─────────────────┴──────────────────╯
 )
 
 ZMK_LAYER(games_fr,
 // ╭───────────────┬─────────────────┬──────────────┬────────────┬──────────────┬──────────╮                    ╭────────────┬───────────┬─────────┬─────────┬────────────────┬────────╮
-    &kp ESC         &trans            &trans         &trans       &trans         &trans                          &trans       &trans      &trans    &trans    &trans           &trans
+    &kp ESC         &none            &none         &none       &none         &none                          &none       &none      &none    &none    &none           &none
 // ├───────────────┼─────────────────┼──────────────┼────────────┼──────────────┼──────────┤                    ├────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &kp TAB         &kp FR_A          &kp FR_Z       &kp FR_E     &kp FR_R       &kp FR_T                        &trans       &kp FR_MICR &trans    &FR_TREM  &FR_U_CIR        &trans
+    &kp TAB         &kp FR_A          &kp FR_Z       &kp FR_E     &kp FR_R       &kp FR_T                        &none       &kp FR_MICR &none    &FR_TREM  &FR_U_CIR        &none
 // ├───────────────┼─────────────────┼──────────────┼────────────┼──────────────┼──────────┤                    ├────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &kp LEFT_SHIFT  &kp FR_Q          &kp FR_S       &kp FR_D     &kp FR_F       &kp FR_G                        &trans       &trans      &trans    &trans    &FR_U_GRV        &trans
+    &kp LEFT_SHIFT  &kp FR_Q          &kp FR_S       &kp FR_D     &kp FR_F       &kp FR_G                        &none       &none      &none    &none    &FR_U_GRV        &none
 // ├───────────────┼─────────────────┼──────────────┼────────────┼──────────────┼──────────┼─────────┬──────────┼────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &kp LCTRL       &kp FR_W          &kp FR_X       &kp FR_C     &kp FR_V       &kp FR_B   &trans    &to 1      &trans       &trans      &trans    &trans    &trans           &trans
+    &kp LCTRL       &kp FR_W          &kp FR_X       &kp FR_C     &kp FR_V       &kp FR_B   &none    &to 1      &none       &none      &none    &none    &none           &none
 // ╰───────────────┴─────────────────┴──────────────┼────────────┼──────────────┼──────────┼─────────┼──────────┼────────────┼───────────┼─────────┼─────────┴────────────────┴────────╯
-                                                     &trans       &trans         &trans     &trans    &trans     &trans       &trans      &trans
+                                                     &none       &none         &none     &none    &none     &none       &none      &none
 //                                                  ╰────────────┴──────────────┴──────────┴─────────┴──────────┴────────────┴───────────┴─────────╯
 )
 
@@ -121,27 +121,27 @@ ZMK_LAYER(navigation,
 // ╭───────────────┬─────────────────┬──────────────┬────────────┬──────────────┬──────────╮                    ╭────────────┬───────────┬─────────┬─────────┬────────────────┬────────╮
     &kp ESC         &kp F1            &kp F2         &kp F3       &kp F4         &kp F5                          &kp F6       &kp F7      &kp F8    &kp F9    &kp F10          &kp F11
 // ├───────────────┼─────────────────┼──────────────┼────────────┼──────────────┼──────────┤                    ├────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &trans          &trans            &trans         &kp UP       &trans         &trans                          &trans       &trans      &trans    &trans    &trans           &kp F12
+    &none          &none            &none         &kp UP       &none         &none                          &none       &none      &none    &none    &none           &kp F12
 // ├───────────────┼─────────────────┼──────────────┼────────────┼──────────────┼──────────┤                    ├────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &trans          &trans            &kp LEFT       &kp DOWN     &kp RIGHT      &trans                          &trans       &trans      &trans    &trans    &trans           &trans
+    &none          &none            &kp LEFT       &kp DOWN     &kp RIGHT      &none                          &none       &none      &none    &none    &none           &none
 // ├───────────────┼─────────────────┼──────────────┼────────────┼──────────────┼──────────┼─────────┬──────────┼────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &trans          &trans            &trans         &trans       &trans         &trans     &trans    &trans     &trans       &trans      &trans    &trans    &trans           &trans
+    &none          &none            &none         &none       &none         &none     &none    &none     &none       &none      &none    &none    &none           &none
 // ╰───────────────┴─────────────────┴──────────────┼────────────┼──────────────┼──────────┼─────────┼──────────┼────────────┼───────────┼─────────┼─────────┴────────────────┴────────╯
-                                                     &trans       &trans         &trans     &trans    &trans     &trans       &trans      &trans
+                                                     &none       &none         &none     &none    &none     &none       &none      &none
 //                                                  ╰────────────┴──────────────┴──────────┴─────────┴──────────┴────────────┴───────────┴─────────╯
 )
 
 ZMK_LAYER(layer_switch,
 // ╭───────────────┬─────────────────┬──────────────┬────────────┬──────────────┬──────────╮                    ╭────────────┬───────────┬─────────┬─────────┬────────────────┬────────╮
-    &trans          &trans            &trans         &trans       &trans         &trans                          &trans       &trans      &trans    &trans    &trans           &trans
+    &none          &none            &none         &none       &none         &none                          &none       &none      &none    &none    &none           &none
 // ├───────────────┼─────────────────┼──────────────┼────────────┼──────────────┼──────────┤                    ├────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &trans          &trans            &trans         &trans       &trans         &trans                          &trans       &trans      &trans    &trans    &trans           &trans
+    &none          &none            &none         &none       &none         &none                          &none       &none      &none    &none    &none           &none
 // ├───────────────┼─────────────────┼──────────────┼────────────┼──────────────┼──────────┤                    ├────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &trans          &to 0             &to 3          &to 5        &to 6          &trans                          &trans       &trans      &trans    &trans    &trans           &trans
+    &none          &to 0             &to 3          &to 5        &to 6          &none                          &none       &none      &none    &none    &none           &none
 // ├───────────────┼─────────────────┼──────────────┼────────────┼──────────────┼──────────┼─────────┬──────────┼────────────┼───────────┼─────────┼─────────┼────────────────┼────────┤
-    &trans          &trans            &trans         &trans       &trans         &trans     &trans    &trans     &trans       &trans      &trans    &trans    &trans           &trans
+    &none          &none            &none         &none       &none         &none     &none    &none     &none       &none      &none    &none    &none           &none
 // ╰───────────────┴─────────────────┴──────────────┼────────────┼──────────────┼──────────┼─────────┼──────────┼────────────┼───────────┼─────────┼─────────┴────────────────┴────────╯
-                                                     &trans       &trans         &trans     &trans    &trans     &trans       &trans      &trans
+                                                     &none       &none         &none     &none    &none     &none       &none      &none
 //                                                  ╰────────────┴──────────────┴──────────┴─────────┴──────────┴────────────┴───────────┴─────────╯
 )
 
