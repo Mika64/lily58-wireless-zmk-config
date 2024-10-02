@@ -67,11 +67,11 @@ ZMK_LAYER(ergol_fr_alt,
 // ╭───────┬─────────────────┬──────────────┬────────────┬─────────────────┬─────────────╮                    ╭────────────┬─────────────────┬──────────────────┬───────────┬────────────────┬────────╮
     &to 0   &none             &none          &none        &none             &none                              &none        &none             &none              &none       &none            &kp PG_UP
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼─────────────┤                    ├────────────┼─────────────────┼──────────────────┼───────────┼────────────────┼────────┤
-    &none   &kp FR_CIRC       &kp FR_LABK    &kp FR_RABK  &kp FR_DLR        &kp FR_PERC                        &kp FR_AT    &kp AMPS          &kp KP_ASTERISK    &kp FR_QUOT &kp FR_GRV       &kp PG_DN
+    &none   &kp FR_CIRC       &kp FR_LABK    &kp FR_RABK  &kp FR_DLR        &kp FR_PERC                        &kp FR_AT    &kp TILDE2        &kp KP_ASTERISK    &kp FR_QUOT &kp FR_GRV       &kp PG_DN
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼─────────────┤                    ├────────────┼─────────────────┼──────────────────┼───────────┼────────────────┼────────┤
     &none   &kp FR_LCBR       &kp FR_LPRN    &kp FR_RPRN  &kp FR_RCBR       &kp FR_EQL                         &kp FR_BSLS  &kp FR_PLUS       &kp FR_MINS        &kp FR_SLSH &kp FR_DQUO      &none
 // ├───────┼─────────────────┼──────────────┼────────────┼─────────────────┼─────────────┼─────────┬──────────┼────────────┼─────────────────┼──────────────────┼───────────┼────────────────┼────────┤
-    &none   &kp TILDE2        &kp FR_LBRC    &kp FR_RBRC  &kp FR_UNDS       &kp FR_HASH   &none    &none       &kp FR_PIPE  &kp FR_EXLM       &kp FR_SCLN        &kp FR_COLN &kp FR_QUES      &none
+    &none   &kp LS(GRAVE)     &kp FR_LBRC    &kp FR_RBRC  &kp FR_UNDS       &kp FR_HASH   &none    &none       &kp FR_PIPE  &kp FR_EXLM       &kp FR_SCLN        &kp FR_COLN &kp FR_QUES      &none
 // ╰───────┴─────────────────┴──────────────┼────────────┼─────────────────┼─────────────┼─────────┼──────────┼────────────┼─────────────────┼──────────────────┼───────────┴────────────────┴────────╯
                                              &none        &none             &none         &kp DEL   &kp ENTER  &none        &none             &none
 //                                          ╰────────────┴─────────────────┴─────────────┴─────────┴──────────┴────────────┴─────────────────┴──────────────────╯
