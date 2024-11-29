@@ -1,13 +1,13 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/ftc/
     - name: urob
       url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: mouse-ftc 
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
