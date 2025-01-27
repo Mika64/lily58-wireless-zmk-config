@@ -102,3 +102,7 @@ ZMK_MACRO(FR_C_CED_UP,
     bindings = <&kp CAPSLOCK>, <&kp FR_CCED>, <&kp CAPSLOCK>, <&to ERGOL_FR>;
 )
 
+// ^
+ZMK_MACRO(FR_O_CIR_CIR, 
+    bindings = <&kp FR_CIRC>, <&kp FR_CIRC>, <&to ERGOL_FR>;
+)
