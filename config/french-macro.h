@@ -103,6 +103,7 @@ ZMK_MACRO(FR_C_CED_UP,
 )
 
 // ^
-ZMK_MACRO(FR_O_CIR_CIR, 
+ZMK_MACRO(FR_CIR_CIR, 
     bindings = <&kp FR_CIRC>, <&kp FR_CIRC>, <&to ERGOL_FR>;
 )
+
