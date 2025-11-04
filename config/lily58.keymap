@@ -36,8 +36,16 @@
 #include "french-morph.h"
 #include "french-macro.h"
 #include "alt-morph.h"
-#include "hrm.h"
+//#include "hrm.h"
 
+ZMK_HOLD_TAP(hml,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <150>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+)
 
 
 ZMK_LAYER(ergol_fr,

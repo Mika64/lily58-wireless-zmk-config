@@ -1,3 +1,8 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#include "zmk-helpers/helper.h"
+
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
     tapping-term-ms = <280>;
@@ -6,3 +11,4 @@ ZMK_HOLD_TAP(hml,
     hold-trigger-on-release;
     bindings = <&kp>, <&kp>;
 )
+
