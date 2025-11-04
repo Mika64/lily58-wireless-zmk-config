@@ -46,6 +46,13 @@
 //    hold-trigger-on-release;
 //    bindings = <&kp>, <&kp>;
 //)
+ZMK_BEHAVIOR(hml, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp>, <&kp>;
+)
+
 
 
 ZMK_LAYER(ergol_fr,
@@ -54,7 +61,7 @@ ZMK_LAYER(ergol_fr,
 // ├───────────────┼──────────┼──────────┼───────────────┼──────────┼────────┤                      ├────────────┼─────────┼─────────┼─────────────────┼─────────┼────────────────┤
     &kp TAB         &kp FR_Q   &kp C      &kp O           &kp P      &kp FR_W                        &kp J        &kp FR_M  &kp D     &dead_key         &kp Y     &kp END
 // ├───────────────┼──────────┼──────────┼───────────────┼──────────┼────────┤                      ├────────────┼─────────┼─────────┼─────────────────┼─────────┼────────────────┤
-    &kp LEFT_SHIFT  &kp FR_A   &kp S      &kp E     &kp N      &kp F                           &kp L        &kp R     &kp T     &kp I             &kp U     &kp RIGHT_SHIFT
+    &kp LEFT_SHIFT  &kp FR_A   &kp S      &hml LCTRL E    &kp N      &kp F                           &kp L        &kp R     &kp T     &kp I             &kp U     &kp RIGHT_SHIFT
 // ├───────────────┼──────────┼──────────┼───────────────┼──────────┼────────┼──────────┬───────────┼────────────┼─────────┼─────────┼─────────────────┼─────────┼────────────────┤
     &kp LCTRL       &kp FR_Z   &kp X      &dash_question  &kp V      &kp B    &kp INS    &kp PSCRN   &dot_colon   &kp H     &kp G     &comma_semicolon  &kp K     &kp RCTRL
 // ╰───────────────┴──────────┴──────────┼───────────────┼──────────┼────────┼──────────┼───────────┼────────────┼─────────┼─────────┼─────────────────┴─────────┴────────────────╯
