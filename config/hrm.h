@@ -4,7 +4,7 @@
 #include "zmk-helpers/helper.h"
 
 ZMK_HOLD_TAP(hml,
-    flavor = "balanced";
+    flavor = "tap-preferred";
     tapping-term-ms = <280>;
     require-prior-idle-ms = <150>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
