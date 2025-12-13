@@ -49,14 +49,20 @@
 ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
-    quick-tap-ms = <150>;
+    quick-tap-ms = <180>;
     bindings = <&kp>, <&kp>;
 )
 ZMK_BEHAVIOR(hmr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
-    quick-tap-ms = <150>;
+    quick-tap-ms = <180>;
     bindings = <&kp>, <&kp>;
+)
+ZMK_BEHAVIOR(nav, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <180>;
+    bindings = <&mo>, <&to>;
 )
 
 
@@ -71,7 +77,7 @@ ZMK_LAYER(ergol_fr,
 // ├───────────────┼──────────────┼────────────┼───────────────┼─────────────────┼────────┼──────────┬───────────┼────────────┼─────────────────┼───────────────┼───────────────────────┼─────────┼────────────────┤
     &kp LCTRL       &kp FR_Z       &kp X        &dash_question  &kp V             &kp B    &kp INS    &kp PSCRN   &dot_colon   &kp H             &kp G           &comma_semicolon        &kp K     &kp RCTRL
 // ╰───────────────┴──────────────┴────────────┼───────────────┼─────────────────┼────────┼──────────┼───────────┼────────────┼─────────────────┼───────────────┼───────────────────────┴─────────┴────────────────╯
-                                                &kp LALT        &kp LGUI          &mo 2    &kp SPACE  &kp BSPC    &mo 2        &to 7             &none
+                                                &kp LALT        &kp LGUI          &mo 2    &kp SPACE  &kp BSPC    &mo 2        &nav 7 7          &none
 //                                             ╰───────────────┴─────────────────┴────────┴──────────┴───────────┴────────────┴─────────────────┴───────────────╯
 )
 
